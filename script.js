@@ -84,3 +84,15 @@ if (form) {
     if (messageInput) messageInput.value = "";
   });
 }
+
+// Back to top functionality
+const backToTop = document.querySelector(".back-to-top");
+if (backToTop) {
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
