@@ -19,7 +19,7 @@
 * { box-sizing: border-box; }
 html { 
   scroll-behavior: smooth; 
-  scroll-padding-top: 80px; /* Account for fixed header */
+  scroll-padding-top: 60px; /* Account for fixed header */
 }
 body {
   margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 img { max-width: 100%; display: block; }
@@ -81,25 +81,26 @@ a:hover { text-decoration: underline; }
 
 /* Hero Title Section */
 .hero-title-section {
-  padding: 60px 0 20px;
+  padding: 5px;
   text-align: center;
+  max-height: 70px;
 }
 
 /* Hero */
-.hero { padding: 100px 0 60px; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.hero { padding: 0px 0 0px; border-bottom: 1px solid rgba(0,0,0,0.06); }
 .hero-inner { 
   display: flex; 
   flex-direction: column;
-  gap: 24px; 
+  gap: 6px; 
   align-items: center; 
 }
 .hero h1 { 
   font-size: clamp(2rem, 4vw, 3rem); 
-  line-height: 1.15; 
-  margin: 0 0 10px; 
+  line-height: 1; 
+  margin: 0 0 0px; 
   text-align: center;
 }
-.hero p { margin: 0 0 18px; color: var(--muted); }
+.hero p { margin: 18px 0 18px; color: var(--muted); }
 .hero-subtitle { font-size: 1.3rem; line-height: 1.5; }
 .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-card { border-radius: 16px; background: radial-gradient(120% 120% at 0% 0%, rgba(110,168,254,.25) 0%, rgba(122,231,199,.12) 50%, rgba(0,0,0,.02) 100%), var(--surface); padding: 24px; box-shadow: var(--shadow); }
@@ -148,7 +149,7 @@ a:hover { text-decoration: underline; }
 }
 
 .profile-email {
-    margin-top: 16px;
+    margin-top: 8px;
     text-align: center;
 }
 
@@ -189,16 +190,17 @@ a:hover { text-decoration: underline; }
 .back-to-top { color: var(--muted); }
 
 /* Responsive */
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   .hero-inner { 
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
   }
   .hero h1 { 
     font-size: clamp(1.8rem, 4vw, 2.5rem); 
     text-align: center; 
+    padding: 10px;
   }
-  .hero { padding: 20px 0 20px;}
+  .hero { padding: 0px 0 6px;}
   .metrics { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .cards { grid-template-columns: repeat(2, 1fr); }
